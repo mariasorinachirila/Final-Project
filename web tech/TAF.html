@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <title>The automobile finder</title>
+  <style>
+    header{
+      background: url(img/car2.webp);
+      background-size: cover;
+      background-position: center;
+      min-height: 1000px;
+    }
+    @media screen and (max-width: 670px){
+      header{
+        min-height: 500px;
+      }
+    }
+    .section{
+      padding-top: 4vw;
+      padding-bottom: 4vw;
+    }
+    .tabs .indicator{
+      background-color: #7eaba6;
+    }
+    .tabs .tab a:focus, .tabs .tab a:focus.active{
+      background: transparent;
+    }
+	
+	.spritefacebook-logo-2019, .spritesm-icons-instagram-glyph-logo, .spritetwitter { display: inline-block; background: url('sprite.png') no-repeat; overflow:visible ; text-indent: 0px; text-align: left; }
+	.spritefacebook-logo-2019 { background-position: -5px -0px; width: 120px; height: 120px; }
+	.spritesm-icons-instagram-glyph-logo { background-position: -5px -805px; width: 120px; height: 120px; }
+	.spritetwitter { background-position: -130px -805px; width: 120px; height: 120px; }
+	
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav class="nav-wrapper transparent">
+      <div class="container">
+		
+		<svg height="130" width="500">
+		  <defs>
+		    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+		      <stop offset="0%"
+		      style="stop-color:rgb(210,190,180);stop-opacity:1" />
+		      <stop offset="100%"
+		      style="stop-color:rgb(180,210,190);stop-opacity:1" />
+		    </linearGradient>
+		  </defs>
+		  <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
+		  <text fill="#ffffff" font-size="45" font-family="Garamond"
+		  x="57" y="86">TAF</text>
+		</svg>
+		
+        <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right">
+          <li><a href="#information">Info</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#" class="tooltipped btn-floating btn-blue-grey darken-2" data-position="bottom" data-tooltip="Instagram"> 
+            <i class="fab fa-instagram"></i>
+          </a></li>
+          <li><a href="#" class="tooltipped btn-floating btn-blue-grey darken-2" data-position="bottom" data-tooltip="Facebook">
+            <i class="fab fa-facebook"></i>
+          </a></li>
+          <li><a href="#" class="tooltipped btn-floating btn-blue-grey darken-2" data-position="bottom" data-tooltip="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a></li>
+        </ul>
+        <ul class="sidenav grey lighten-2" id="mobile-menu">
+          <li><a href="#">Info</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+  <section class="container section scrollspy" id="information">
+    <div class="row">
+      <div class="col s12 l4">
+          <img src="img/car.jpeg" alt="" class="responsive-img materialboxed">
+      </div>
+      <div class="col s12 l6 offset-l1">
+		  <canvas id="myCanvas" width="200" height="100" style="border:0px transparent;"></canvas>
+
+		  <script>
+			  var c = document.getElementById("myCanvas");
+			  var ctx = c.getContext("2d");
+			  ctx.font = "50px Verdana";
+			  ctx.strokeText("Brands",10,40);
+			  </script>    
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi non arcu risus quis varius. Bibendum est ultricies integer quis auctor elit sed. Felis imperdiet proin fermentum leo. Facilisis magna etiam tempor orci eu. Odio euismod lacinia at quis. Etiam dignissim diam quis enim lobortis scelerisque fermentum dui. Semper quis lectus nulla at volutpat diam.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 l4 offset-l1 push-l7">
+          <img src="img/interior.jpeg" alt="" class="responsive-img materialboxed">
+      </div>
+	  
+      <div class="col s12 l6 offset-l1 pull-l5 right-align">
+        <h2 class="grey-text text-grey">Models</h2>
+        <p> Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non. Nulla malesuada pellentesque elit eget gravida cum. Morbi non arcu risus quis varius. Aliquet nec ullamcorper sit amet risus. Pretium viverra suspendisse potenti nullam ac tortor. Leo vel orci porta non pulvinar neque laoreet suspendisse.</p>
+      </div>
+    </div>
+	
+    <div class="row">
+		<div class="col s12 l6 offset-l1">
+			 <img src="img/car3.jpeg" alt="" class="responsive-img materialboxed">
+		</div>
+		
+      <div class="col s12 l4 left-align">
+           <h2 class="grey-text text-grey">Extra info</h2>
+           <p> Mi in nulla posuere sollicitudin aliquam ultrices sagittis. Interdum varius sit amet mattis. In nulla posuere sollicitudin aliquam ultrices sagittis orci. Morbi tristique senectus et netus. Id venenatis a condimentum vitae sapien pellentesque habitant morbi. Amet dictum sit amet justo donec enim. In est ante in nibh mauris cursus. Quis eleifend quam adipiscing vitae proin sagittis nisl rhoncus mattis.</p>
+     </div>
+  </section>
+
+  <div class="parallax-container">
+    <div class="parallax">
+      <img src="img/sunset.jpeg" alt="" class="responsive-img">
+    </div>
+  </div>
+
+
+  <footer class="page-footer blue-grey lighten-1">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5>About us</h5>
+          <p>The automobile finder offers its car trading professionals exclusive access to a stock of more than 30,000 inspected used cars, while taking care of the whole B2B transaction. This includes transport, car and document handling!</p>
+		  
+	  		<li>
+	  		<div class="spritefacebook-logo-2019"></div>
+	  		<div class="spritesm-icons-instagram-glyph-logo"></div>
+	  		<div class="spritetwitter"></div>
+		</li>
+		  
+        </div>
+		
+		
+		
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text text-white-text" href="#">Facebook</a></li>
+            <li><a class="white-text text-white-text" href="#">Twitter</a></li>
+            <li><a class="white-text text-white-text" href="#">Instagram</a></li>
+			<li> 		   
+			<a class="btn blue-grey modal-trigger" href="#terms">Login</a>
+		    <div id="terms" class="modal">
+		    <div class="modal-content blue-grey">
+		    <h3>Login</h3>
+		    <form action="#">
+		     <div class="form-group">
+		    <label for="name">Name:</label>
+		     <input type="text" class="form-control" id="name" placeholder="Enter email" name="email">
+		      </div>
+		     <div class="form-group"> <label for="email">E-mail:</label> <input type="email" class="form-control" id="email"
+		     placeholder="Enter email" name="email"> 
+		 </div> 
+		 <div class="form-group"> 
+			 <label for="pwd">Password:</label> 
+			 <input type="password" class="form-control" id="psw" placeholder="Enter password" name="pwd"> </div>
+
+		     <button type="button" onclick="saveData()" id="save_btn" class="btn btn-default">Submit</button>
+		      </form>
+
+		      </div>
+
+		     </div></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright blue-grey">
+      <div class="container center-align">&copy; 2022 MSC </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+
+      $('.sidenav').sidenav();
+      $('.materialboxed').materialbox();
+      $('.parallax').parallax();
+      $('.tooltipped').tooltip();
+      $('.scrollspy').scrollSpy();
+	  $('.modal').modal();
+
+    });
+  	</script>
+	<script>
+  function saveData()
+    {
+    let name,email,psw;
+    name=document.getElementById("name").value;
+    email=document.getElementById("email").value;
+
+    psw=document.getElementById("psw").value;
+
+    localStorage.setItem("name",name)
+    localStorage.setItem("email",email)
+    localStorage.setItem("psw",psw)}
+	
+	</script>
+</body>
+</html>
